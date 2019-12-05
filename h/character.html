@@ -1,0 +1,389 @@
+<!DOCTYPE html><!-- 21961060_석지연 --><!-- background: url(img/sky.png) repeat -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Noto+Sans+KR:400,500,700|Sulphur+Point:700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      .clear {
+        clear: both;
+      }
+      body {
+        font-family: 'Noto Sans KR:400', sans-serif;
+        font-size: 15px;
+        color: white;
+        background-color: black;
+        background: url("img/back.jpg")
+      }
+      header {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+      }
+      #logo {
+        float: center;
+        margin: 5px 0 0 0;
+      }
+      #menus {
+        float: center;
+      }
+      #top_menu {
+        width: 90%;
+        text-align: right;
+        margin-top: 20px;
+      }
+      #main_menu {
+        float: center;
+        width: 1500px;
+        height: 300px;
+        font-family: 'Sulphur Point', sans-serif;
+        margin-top: 50px;
+        font-size: 40px;
+      }
+      #main_menu li {
+        display: inline;
+        margin-left: 100px;
+      }
+      #main_img {
+        width: 100%;
+        height: 10px;
+        background-image: url('img/main_img.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        margin-top: 20px;
+      }
+      #contents {
+        float: center;
+        width: 1500px;
+        height: 1400px;
+        margin: 0 auto;
+        background-color: #191616;
+        box-shadow: 10px 5px 50px 5px #957086;
+      }
+      #sub_menu {
+        width: 180px;
+        float: left;
+        margin-top: 150px;
+        margin-left: 50px;
+        font-size: 18px;
+      }
+      #main_contents2 {
+        width: 1200px;
+        float: right;
+        margin-top: 50px;
+      }
+      #main_contents #figure2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        float: center;
+        text-align: center;
+      }
+      #main_contents #figure2 img {
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+        transform:scale(1);
+        -webkit-transition:.3s;
+        -moz-transition:.3s;
+        -ms-transition:.3s;
+        -o-transition:.3s;
+        transition:.3s;
+      }
+      #main_contents #figure2 img:hover {
+        -webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        -o-transform:scale(1.1);
+        transform:scale(1.1);
+      }
+      #sub_menu a {
+        display: inline-block;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      #sub_menu a:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      }
+      #sub_menu h3 {
+        font-family: 'Noto Sans KR: 700', sans-serif;
+        font-size: 20px;
+        color: black;
+        padding: 12px;
+        background-color: gold;
+        border-radius: 10px;
+      }
+      #sub_menu li {
+        padding: 10px;
+        border-bottom: dotted 1px #cccccc;
+      }
+      #main_contents {
+        width: 1200px;
+        float: right;
+        margin-top: 50px;
+      }
+      #main_contents h3 {
+        font-size: 25px;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #cccccc;
+      }
+      #main_contents p {
+        margin-top: 30px;
+        line-height: 180%;
+        font-size: 20px;
+      }
+      #main_contents #figure {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        float: center;
+        text-align: center;
+      }
+      #main_contents li {
+        padding: 5px;
+      }
+      footer {
+        width: 100%;
+        height: 160px;
+        margin-top: 30px;
+        background-color: black;
+      }
+      #footer_box {
+        width: 1900px;
+        height: 160px;
+        margin: 0 auto;
+      }
+      #footer_logo {
+        float: left;
+        margin: 20px 0 0 30px;
+      }
+      #address {
+        float: right;
+        margin: 50px 30px 0 0;
+        color: white;
+        text-align: right;
+      }
+      a{
+        text-decoration:none;
+        color: gray;
+      }
+      .sm-link{
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    --uismLinkTextColor: var(--smLinkTextColor);
+    --uismLinkTextColorHover: var(--smLinkTextColorHover);
+
+    display: var(--uismLinkDisplay);
+    color: var(--uismLinkTextColor);
+    position: relative;
+    overflow: hidden;
+    }
+
+    a.sm-link{
+      text-decoration: none;
+      }
+    .sm-link__label{
+      display: block;
+      }
+      .sm-link_padding-bottom{
+        --uismLinkLineWeight: var(--smLinkLineWeight, 2px);
+        --uismLinkLineColor: var(--smLinkLineColor, gold);
+        padding-bottom: var(--uismLinkLineWeight);
+        position: relative;
+      }
+
+    .sm-link_padding-bottom::after{
+      content: "";
+      width: 100%;
+      height: var(--uismLinkLineWeight);
+      background-color: var(--uismLinkLineColor);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      }
+    .sm-link3::after{
+      transform: translate3d(-100%, 0, 0);
+      transition: transform .2s ease-in;
+      }
+    .sm-link3:hover::after{
+      transform: translate3d(0, 0, 0);
+      }
+      .loading span {
+        display: inline-block;
+        margin: 0 -.075em ;
+        animation: loading .7s infinite alternate;
+        font-size: 25px;
+      }
+      .loading h3 {
+        width: 300px;
+        font-size: 22px;
+        border-bottom: solid 2px #cccccc;
+      }
+      .loading span:nth-child(2) {
+        animation-delay: .1s;
+      }
+      .loading span:nth-child(3) {
+        animation-delay: .2s;
+      }
+      .loading span:nth-child(4) {
+        animation-delay: .3s;
+      }
+      .loading span:nth-child(5) {
+        animation-delay: .4s;
+      }
+      .loading span:nth-child(6) {
+        animation-delay: .5s;
+      }
+      .loading span:nth-child(7) {
+        animation-delay: .6s;
+      }
+      .loading span:nth-child(8) {
+        animation-delay: .7s;
+      }
+      .loading span:nth-child(9) {
+        animation-delay: .7s;
+      }
+      .loading span:nth-child(10) {
+        animation-delay: .8s;
+      }
+      .loading span:nth-child(11) {
+        animation-delay: .8s;
+      }
+      .loading span:nth-child(12) {
+        animation-delay: .8s;
+      }
+      .loading span:nth-child(13) {
+        animation-delay: .9s;
+      }
+      .loading span:nth-child(14) {
+        animation-delay: .9s;
+      }
+      @keyframes loading {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.8);
+        }
+      }
+      .sample_image  img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+    }
+    .sample_image:hover img {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+    }
+    audio {
+      height: 14px;
+      width: 250px;
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+    <header>
+      <div id='top_menu'>
+        <audio src="img/toystory.mp3" controls autoplay loop></audio>&nbsp;&nbsp;&nbsp;
+      <a href=https://www.waltdisneystudios.com/ target="_blank">Disney Studio</a> | <a href=https://namu.wiki/w/%ED%86%A0%EC%9D%B4%20%EC%8A%A4%ED%86%A0%EB%A6%AC%204 target="_blank">나무위키</a>
+      </div>
+        <nav id='menus'>
+          <div id='logo'>
+            <a href="index.html"><img src='img/logo.png' width='200px'></a>
+          </div>
+        <ul id='main_menu'>
+      <li><a href="home.html" style="color:white" class="sm-link sm-link_padding-bottom sm-link3">
+          <span class="sm-link__label">ABOUT</span></a></li>
+      <li><a href="characterm.html" style="color:gold" class="sm-link sm-link_padding-bottom sm-link3">
+          <span class="sm-link__label">CHARACTER</span></a></li>
+      <li><a href="artwork.html" style="color:white" class="sm-link sm-link_padding-bottom sm-link3">
+          <span class="sm-link__label">VIDEO</span></a></li>
+      <li><a href="gallery.html" style="color:white" class="sm-link sm-link_padding-bottom sm-link3">
+          <span class="sm-link__label">GALLERY</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id='contents'>
+      <nav id='sub_menu'>
+       <h3><a href="characterm.html" style="color:black">CHARACTER</a></h3>
+       <ul>
+         <li><a href="character.html"style="color:gold">MAIN CHARACTER</a></li>
+         <li><a href="villain.html" >VILLAIN</a></li>
+       </ul>
+      </nav>
+   <div id='main_contents'>
+     <center>
+       <div class="loading"><h3>
+         <span>M</span>
+         <span>A</span>
+         <span>I</span>
+         <span>N</span>
+         <span></span>
+         <span>C</span>
+         <span>H</span>
+         <span>A</span>
+         <span>R</span>
+         <span>A</span>
+         <span>C</span>
+         <span>T</span>
+         <span>E</span>
+         <span>R</span>
+       </h3> </div>
+      <div id='main_contents2'>
+      <div id='figure2'>
+        <a href="woody.html" target="if_a"><img src='img/woodyp.png'width="300px"></a>
+        <a href="buzz.html" target="if_a"><img src='img/buzzp.png'width="300px"></a>
+        <a href="bopeep.html" target="if_a"><img src='img/bopeep.png'width="300px"></a>
+      </div>
+      <span>
+        <a href="woody.html" target="if_a"></a>
+      </span>
+          <iframe src="basic.html" width="760" height="250" name="if_a" frameborder="0"></iframe>
+      <div id='figure2'>
+        <a href="porky.html" target="if_b"><img src='img/forky.png'width="300px"></a>
+        <a href="friends.html" target="if_b"><img src='img/friends.png'width="300px"></a>
+        <a href="moto.html" target="if_b"><img src='img/moto.png'width="300px"></a>
+    </div>
+    <iframe src="basic.html" width="760" height="250" name="if_b" frameborder="0"></iframe>
+    </center>
+  </div></div>
+    </section>
+    <a href="#" title="Back to Top" style="display:scroll;position:fixed;bottom:300px;right:30px;" onfocus='this.blur()'>
+      <img src="img/top.png" width="50px"></a>
+    <a href="#gotobottom" title="Back to bottom" style="display:scroll;position:fixed;bottom:230px;right:30px;" onfocus='this.blur()'>
+      <img src="img/bottom.png" width="50px"></a>
+    <div class='clear'></div> <!-- float 속성 해제 -->
+    <div id='gotobottom'/>
+    <footer>
+      <div id='footer_box'>
+      <div id='footer_logo'>
+      <a href="index.html"><img src='img/logo.png'width="100px"></a>
+      </div>
+      <ul id='address'>
+        <li>토이스토리4에 관한 웹사이트</li>
+        <li>21961060_석지연</li>
+        <li>계원예술대학교 디지털미디어 디자인 Class B</li>
+      </ul>
+      </div>
+    </footer>
+  </body>
+</html>
