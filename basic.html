@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        padding: 2rem;
+      }
+
+      h2 {
+        font-family: 'Arial';
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 0.75;
+      }
+
+      span {
+        display: block;
+      }
+
+      span:not(.light) {
+        opacity: 0;
+        animation: flashText .6s ease-out alternate infinite;
+      }
+
+      @keyframes flash{
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes flashText {
+        to {
+          opacity: 0.8;
+        }
+      }
+      </style>
+  </head>
+  <body>
+    <center>
+      <h2>
+      <span>Click the image</span>
+    </h2>
+
+    </center>
+  </body>
+</html>
